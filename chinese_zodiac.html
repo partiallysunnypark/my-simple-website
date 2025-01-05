@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Spring Festival Art Gallery</title>
+    <style>
+        body {
+            background-color: #ffe5b4;
+            font-family: 'Noto Serif', serif;
+            text-align: center;
+        }
+        h1 {
+            color: #d63329;
+        }
+        .art-gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .art-piece {
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff5e1;
+            border-radius: 15px;
+            box-shadow: 3px 3px 5px #888888;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .art-piece img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+        .home-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chinese Spring Festival Art Gallery</h1>
+    <div class="art-gallery">
+        <div class="art-piece">
+            <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTu1vEEfzMyRZoaxw-PzvOvAY2eMOnPhZxzSulcOYbfqHM?width=1024" alt="Loong">
+        </div>
+        <div class="art-piece">
+            <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQS16u2BGcGSTJYwIgJ4dq26AT_NsTHU09Lief5JK3FJT2E?width=2042&height=2638" alt="Snake">
+        </div>
+    </div>
+    <div class="home-button">
+        <button onclick="window.location.href='index.html';">Back to Home</button>
+    </div>
+</body>
+</html>

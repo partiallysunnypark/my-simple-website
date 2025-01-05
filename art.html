@@ -3,59 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Page</title>
+    <title>Art Gallery</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #ffccff;
-            background-image: url('https://www.transparenttextures.com/patterns/bright-squares.png');
-        }
-        header {
-            background-color: #ff66cc;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #f0f8ff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             text-align: center;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
+        h1 {
+            color: #ff69b4;
         }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: #ff66cc;
-            text-decoration: none;
-            padding: 5px 10px;
-            background-color: #fff;
-            border-radius: 5px;
-        }
-        nav ul li a:hover {
-            background-color: #ffffcc; /* Light yellow */
-        }
-        .container {
-            max-width: 800px;
+        .art-piece {
+            width: 80%;
+            max-width: 600px;
             margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .art-piece img {
+            width: 100%;
+            height: auto;
             border-radius: 10px;
         }
-        .award-list {
-            list-style-type: none;
-            padding: 0;
+        .art-piece figcaption {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.9em;
         }
-        .award-list li {
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-            word-wrap: break-word;
-        }
-        .award-list li:last-child {
-            border-bottom: none;
+        .home-button {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -63,254 +40,147 @@
     <header>
         <h1>Art Awards</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="art.html">Art</a></li>
-            <li><a href="soccer.html">Soccer</a></li>
-        </ul>
-    </nav>
     <div class="container">
-        <h2>List of Art Awards</h2>
-        <ul class="award-list">
-            <li><strong>Silver award in junior painting category, H.C. Andersen Art Awards - 2024</strong>
+        <div class="award-list">
+            <p><strong>Silver award in junior painting category, H.C. Andersen Art Awards - 2024</strong>
                 - <a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSVTkcxoyCOQYzQSI5SDa0IAZW4PM1VvcspJ6xESK6TdTM?width=2417&height=1872" target="_blank">Bird</a>.
-            <li><strong>2nd award of excellence, Horace Mann Art Reflection - 2024</strong>
+            </p>
+            <p><strong>2nd award of excellence, Horace Mann Art Reflection - 2024</strong>
                 - <a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTnLBjhWlVJR7AIQa6wmGXgAcwjzgNxF42IWxsKLA5dBWY?width=1024" target="_blank">In the Mirror</a>.
-            <li><strong>Award of excellence, Horace Mann Art Reflection - 2023</strong>
-                - <a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTbE_F9c5tDQYbkdPyjspvnAZ6OwThjlvXMF5ClUzMK6wM?width=3024&height=4032" target="_blank">Sunset</a>.            
-            <li>
-                <strong>High Merit, Celebrating Art, Summer 2024</strong>
-                 - <a href="https://www.celebratingart.com/high-merit?id=320271&grade=3&contestname=Summer%202024&biggrade=K-3&wintp=filemaker" target="_blank">I see you</a>.
-            </li>
-            <li><strong>High Merit, Celebrating Art, Summer 2023</strong>
-                 - <a href="https://www.celebratingart.com/high-merit?id=285631&grade=1&contestname=Summer%202023&biggrade=K-3&wintp=filemaker" target="_blank">Peacock</a>.            
-            <li><strong>Invite to publish, Celebrating Art - Fall 2022</strong>
-                 - <a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT0DjVp5gk-T4SnvKkWqX5AAc98KnrlQ77IWUGWarQgbOM?width=2911&height=3576" target="_blank">Owl</a>.
-        </ul>
+            </p>
+            <p><strong>Award of excellence, Horace Mann Art Reflection - 2023</strong>
+                - <a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTbE_F9c5tDQYbkdPyjspvnAZ6OwThjlvXMF5ClUzMK6wM?width=3024&height=4032" target="_blank">Sunset</a>.
+            </p>
+            <p><strong>High Merit, Celebrating Art, Summer 2024</strong>
+                - <a href="https://www.celebratingart.com/high-merit?id=320271&grade=3&contestname=Summer%202024&biggrade=K-3&wintp=filemaker" target="_blank">I see you</a>.
+            </p>
+            <p><strong>High Merit, Celebrating Art, Summer 2023</strong>
+                - <a href="https://www.celebratingart.com/high-merit?id=285631&grade=1&contestname=Summer%202023&biggrade=K-3&wintp=filemaker" target="_blank">Peacock</a>.
+            </p>
+            <p><strong>Invite to publish, Celebrating Art - Fall 2022</strong>
+                - <a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT0DjVp5gk-T4SnvKkWqX5AAc98KnrlQ77IWUGWarQgbOM?width=2911&height=3576" target="_blank">Owl</a>.
+            </p>
+        </div>
     </div>
-    <div class="container">
-        <h2>Art Gallery</h2>
-        <div class="slideshow-container"></div>
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSVTkcxoyCOQYzQSI5SDa0IAZW4PM1VvcspJ6xESK6TdTM?width=2417&height=1872" style="width:100%">
-                <figcaption style="text-align: center;">Bird. Silver award, H.C. Andersen Art Awards - 2024</figcaption>
-            </div>         
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTnLBjhWlVJR7AIQa6wmGXgAcwjzgNxF42IWxsKLA5dBWY?width=1024" style="width:100%">
-                <figcaption style="text-align: center;">In the Mirror. 2nd Award of excellence, H.M. Art Reflection 2024.</figcaption>
-            </div>            
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTbE_F9c5tDQYbkdPyjspvnAZ6OwThjlvXMF5ClUzMK6wM?width=3024&height=4032" style="width:100%">
-                <figcaption style="text-align: center;">Sunset. Award of excellence, H.M. Art Reflection 2023.</figcaption>
-            </div>              
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQShKnpM1TWVS58TOYN0Sv7FAajll0aJTTbcieSV4kttgm4?width=1024" style="width:100%">
-                <figcaption style="text-align: center;">I See You. Celebrating Art, Summer 2024, High Merit.</figcaption>
-            </div>
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQQYbNknIiUVSqf6YwUQ8aH-Aei_y7iqXpWPWCEu3pi6KfQ?width=1024" style="width:100%">
-                <figcaption style="text-align: center;">Deer</figcaption>
-            </div>         
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQScFezeKhwWSIPIoWtS-iPDAY9D4WkH2uW9L4OjKxfcdv4?width=1024" style="width:100%">
-                <figcaption style="text-align: center;">Peacock</figcaption>
-            </div>      
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRFxN25kiU8SovXpwYvhrB2ARjS9JH2mpHBa3VEkmLsjt0?width=2967&height=3704" style="width:100%">
-                <figcaption style="text-align: center;">Flowers</figcaption>
-            </div>          
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSRKWFxShhJRJUv3lI1DGcAAVkXq_Rw9o-meX91UiPZIWc?width=1440&height=1920" style="width:100%">
-                <figcaption style="text-align: center;">Loong</figcaption>
-            </div>   
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT12UK7RqQERbvPNwysgpEpAbvTlXsFa49cxGCR8ouBTQ4?width=1440&height=1882" style="width:100%">
-                <figcaption style="text-align: center;">Penguin</figcaption>
-            </div>               
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSncSJGjeLKTYceghJvLGxRAc8Aax3axyOdJHhOyY7WTEA?width=1440&height=1920" style="width:100%">
-                <figcaption style="text-align: center;">Winter break in a snap</figcaption>
-            </div>      
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSxxgls4YH4R7M2vHIBLUqIAfCXe8wesBqzN3MPEzg7s5Y?width=1888&height=2560" style="width:100%">
-                <figcaption style="text-align: center;">Rooster</figcaption>
-            </div>       
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSrqlpZ8HXNRa__UwDeuSPYARvZN56i6abziGeOwXDTaaU?width=2755&height=3461" style="width:100%">
-                <figcaption style="text-align: center;">Dragon Eye</figcaption>
-            </div>     
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT0DjVp5gk-T4SnvKkWqX5AAc98KnrlQ77IWUGWarQgbOM?width=2911&height=3576" style="width:100%">
-                <figcaption style="text-align: center;">Owl</figcaption>
-            </div>         
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSqbL0E26HSSIuBOqdK0_U7Ad40rajecljmn5x5AcJa6X0?width=2127&height=2021" style="width:100%">
-                <figcaption style="text-align: center;">Bird</figcaption>
-            </div>    
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSFTGYyKwBzQ5HKVOuLq9kxAb5yNM9lkLHRI9C6nYM_qn4?width=3566&height=3514" style="width:100%">
-                <figcaption style="text-align: center;">Eagle</figcaption>
-            </div>  
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRz7Eq7nZpqQa0lae_uJ64TAa1trfH4Ok39GI0fWnflFjM?width=2614&height=3496" style="width:100%">
-                <figcaption style="text-align: center;">River</figcaption>
-            </div>     
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSzf8xmH4dTRJPqgUc4QgWiAVK980eCtrC9TfmRCMmHGXw?width=3866&height=2853" style="width:100%">
-                <figcaption style="text-align: center;">Store</figcaption>
-            </div>                
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT0HiI7DabzRKOCpjrVzDzTAamzCFMoWITTDlAwWWSEzTc?width=2784&height=3818" style="width:100%">
-                <figcaption style="text-align: center;">Hunted House</figcaption>
-            </div>       
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT_Wap2JsIJT5qyBZVBBG0LAWGhIOqO6O6xZ5Om1DY_cwk?width=2516&height=3343" style="width:100%">
-                <figcaption style="text-align: center;">Volcano</figcaption>
-            </div>  
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSwS4n_ZUnhQYL6L4pU0Yk3AUkL8ZqkBXyCNOkGjxs7P_0?width=2552&height=3325" style="width:100%">
-                <figcaption style="text-align: center;">Girl</figcaption>
-            </div>    
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQQMRHaAVLfxSLWfokniHKFxAYkEulJD4BmSrOYy6zzkwyQ?width=2614&height=3450" style="width:100%">
-                <figcaption style="text-align: center;">Snow Man</figcaption>
-            </div>   
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTrBgtr0DxpSJFFOSfPlpFvAX8iL3VwpHSpC1upiJbrvAo?width=3080&height=2317" style="width:100%">
-                <figcaption style="text-align: center;">Bird in Snow</figcaption>
-            </div>   
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRaTWERVsOHRZK15KlzFKb9ATVBaAQNBh4ZLnACY6BvhO4?width=2364&height=3129" style="width:100%">
-                <figcaption style="text-align: center;">Flower Pot</figcaption>
-            </div>    
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQQzM6Wo3ikmQrV-dyYdjpxEAYmszgnwGSajjNhFLrDRjWw?width=2585&height=1961" style="width:100%">
-                <figcaption style="text-align: center;">Book</figcaption>
-            </div>      
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRViktAb5XLQJRfkuEeH96uATY0WZDS4B5KzQi2ScPW6Wo?width=2225&height=2979" style="width:100%">
-                <figcaption style="text-align: center;">Bird</figcaption>
-            </div>    
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRHFucU_h9lSbh8wTJRp4dfAR7T0dtavmAjZHVIoMlqe7E?width=1973&height=2467" style="width:100%">
-                <figcaption style="text-align: center;">Flowers</figcaption>
-            </div>    
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT9RexeKawSQb_mD3PI5F_6AYb4kx3YvjdCYTxtzs8ifRA?width=2118&height=2783" style="width:100%">
-                <figcaption style="text-align: center;">Snow Mountain</figcaption>
-            </div>    
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTa9tP4Vs9SRJEK0wgWl4CbAWazeDUmtiwxK_L_mTyWTpg?width=2474&height=3298" style="width:100%">
-                <figcaption style="text-align: center;">Mountain in Fall</figcaption>
-            </div>       
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQQJjUgJOLdgSqFBddN_FKCMAf79DFIEuhz-ihZL26qR-II?width=2501&height=1944" style="width:100%">
-                <figcaption style="text-align: center;">Swan</figcaption>
-            </div>    
-            <div class="mySlides fade">
-                <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSkGNWHcKJMQKF4J3CyfGdZAdAzQfGci4xEPEfrsnloPiQ?width=2299&height=2955" style="width:100%">
-                <figcaption style="text-align: center;">Apple</figcaption>
-            </div>                                                                                          
-        </div>
-        <br>
-        <div style="text-align:center">
-            <script>
-                let slideCount = document.getElementsByClassName('mySlides').length;
-                for (let i = 1; i <= slideCount; i++) {
-                    document.write('<span class="dot" onclick="currentSlide(' + i + ')"></span> ');
-                }
-            </script>
-        </div>
+    <h1>Kids Art Gallery</h1>
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSVTkcxoyCOQYzQSI5SDa0IAZW4PM1VvcspJ6xESK6TdTM?width=2417&height=1872" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSVTkcxoyCOQYzQSI5SDa0IAZW4PM1VvcspJ6xESK6TdTM?width=2417&height=1872" target="_blank">Bird. Silver award, H.C. Andersen Art Awards - 2024</a></figcaption>
+    </figure>         
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTnLBjhWlVJR7AIQa6wmGXgAcwjzgNxF42IWxsKLA5dBWY?width=1024" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTnLBjhWlVJR7AIQa6wmGXgAcwjzgNxF42IWxsKLA5dBWY?width=1024" target="_blank">In the Mirror. 2nd Award of excellence, H.M. Art Reflection 2024.</a></figcaption>
+    </figure>            
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTbE_F9c5tDQYbkdPyjspvnAZ6OwThjlvXMF5ClUzMK6wM?width=3024&height=4032" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTbE_F9c5tDQYbkdPyjspvnAZ6OwThjlvXMF5ClUzMK6wM?width=3024&height=4032" target="_blank">Sunset. Award of excellence, H.M. Art Reflection 2023.</a></figcaption>
+    </figure>              
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQShKnpM1TWVS58TOYN0Sv7FAajll0aJTTbcieSV4kttgm4?width=1024" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQShKnpM1TWVS58TOYN0Sv7FAajll0aJTTbcieSV4kttgm4?width=1024" target="_blank">I See You. Celebrating Art, Summer 2024, High Merit.</a></figcaption>
+    </figure>
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQQYbNknIiUVSqf6YwUQ8aH-Aei_y7iqXpWPWCEu3pi6KfQ?width=1024" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQQYbNknIiUVSqf6YwUQ8aH-Aei_y7iqXpWPWCEu3pi6KfQ?width=1024" target="_blank">Deer</a></figcaption>
+    </figure>         
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQScFezeKhwWSIPIoWtS-iPDAY9D4WkH2uW9L4OjKxfcdv4?width=1024" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQScFezeKhwWSIPIoWtS-iPDAY9D4WkH2uW9L4OjKxfcdv4?width=1024" target="_blank">Peacock</a></figcaption>
+    </figure>      
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRFxN25kiU8SovXpwYvhrB2ARjS9JH2mpHBa3VEkmLsjt0?width=2967&height=3704" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRFxN25kiU8SovXpwYvhrB2ARjS9JH2mpHBa3VEkmLsjt0?width=2967&height=3704" target="_blank">Flowers</a></figcaption>
+    </figure>          
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT12UK7RqQERbvPNwysgpEpAbvTlXsFa49cxGCR8ouBTQ4?width=1440&height=1882" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT12UK7RqQERbvPNwysgpEpAbvTlXsFa49cxGCR8ouBTQ4?width=1440&height=1882" target="_blank">Penguin</a></figcaption>
+    </figure>               
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSncSJGjeLKTYceghJvLGxRAc8Aax3axyOdJHhOyY7WTEA?width=1440&height=1920" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSncSJGjeLKTYceghJvLGxRAc8Aax3axyOdJHhOyY7WTEA?width=1440&height=1920" target="_blank">Winter break in a snap</a></figcaption>
+    </figure>      
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSxxgls4YH4R7M2vHIBLUqIAfCXe8wesBqzN3MPEzg7s5Y?width=1888&height=2560" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSxxgls4YH4R7M2vHIBLUqIAfCXe8wesBqzN3MPEzg7s5Y?width=1888&height=2560" target="_blank">Rooster</a></figcaption>
+    </figure>       
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSrqlpZ8HXNRa__UwDeuSPYARvZN56i6abziGeOwXDTaaU?width=2755&height=3461" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSrqlpZ8HXNRa__UwDeuSPYARvZN56i6abziGeOwXDTaaU?width=2755&height=3461" target="_blank">Dragon Eye</a></figcaption>
+    </figure>     
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT0DjVp5gk-T4SnvKkWqX5AAc98KnrlQ77IWUGWarQgbOM?width=2911&height=3576" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT0DjVp5gk-T4SnvKkWqX5AAc98KnrlQ77IWUGWarQgbOM?width=2911&height=3576" target="_blank">Owl</a></figcaption>
+    </figure>         
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSqbL0E26HSSIuBOqdK0_U7Ad40rajecljmn5x5AcJa6X0?width=2127&height=2021" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSqbL0E26HSSIuBOqdK0_U7Ad40rajecljmn5x5AcJa6X0?width=2127&height=2021" target="_blank">Bird</a></figcaption>
+    </figure>    
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSFTGYyKwBzQ5HKVOuLq9kxAb5yNM9lkLHRI9C6nYM_qn4?width=3566&height=3514" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSFTGYyKwBzQ5HKVOuLq9kxAb5yNM9lkLHRI9C6nYM_qn4?width=3566&height=3514" target="_blank">Eagle</a></figcaption>
+    </figure>  
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRz7Eq7nZpqQa0lae_uJ64TAa1trfH4Ok39GI0fWnflFjM?width=2614&height=3496" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRz7Eq7nZpqQa0lae_uJ64TAa1trfH4Ok39GI0fWnflFjM?width=2614&height=3496" target="_blank">River</a></figcaption>
+    </figure>     
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSzf8xmH4dTRJPqgUc4QgWiAVK980eCtrC9TfmRCMmHGXw?width=3866&height=2853" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSzf8xmH4dTRJPqgUc4QgWiAVK980eCtrC9TfmRCMmHGXw?width=3866&height=2853" target="_blank">Store</a></figcaption>
+    </figure>                
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT0HiI7DabzRKOCpjrVzDzTAamzCFMoWITTDlAwWWSEzTc?width=2784&height=3818" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT0HiI7DabzRKOCpjrVzDzTAamzCFMoWITTDlAwWWSEzTc?width=2784&height=3818" target="_blank">Hunted House</a></figcaption>
+    </figure>       
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT_Wap2JsIJT5qyBZVBBG0LAWGhIOqO6O6xZ5Om1DY_cwk?width=2516&height=3343" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT_Wap2JsIJT5qyBZVBBG0LAWGhIOqO6O6xZ5Om1DY_cwk?width=2516&height=3343" target="_blank">Volcano</a></figcaption>
+    </figure>  
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSwS4n_ZUnhQYL6L4pU0Yk3AUkL8ZqkBXyCNOkGjxs7P_0?width=2552&height=3325" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSwS4n_ZUnhQYL6L4pU0Yk3AUkL8ZqkBXyCNOkGjxs7P_0?width=2552&height=3325" target="_blank">Girl</a></figcaption>
+    </figure>    
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQQMRHaAVLfxSLWfokniHKFxAYkEulJD4BmSrOYy6zzkwyQ?width=2614&height=3450" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQQMRHaAVLfxSLWfokniHKFxAYkEulJD4BmSrOYy6zzkwyQ?width=2614&height=3450" target="_blank">Snow Man</a></figcaption>
+    </figure>   
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTrBgtr0DxpSJFFOSfPlpFvAX8iL3VwpHSpC1upiJbrvAo?width=3080&height=2317" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTrBgtr0DxpSJFFOSfPlpFvAX8iL3VwpHSpC1upiJbrvAo?width=3080&height=2317" target="_blank">Bird in Snow</a></figcaption>
+    </figure>   
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRaTWERVsOHRZK15KlzFKb9ATVBaAQNBh4ZLnACY6BvhO4?width=2364&height=3129" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRaTWERVsOHRZK15KlzFKb9ATVBaAQNBh4ZLnACY6BvhO4?width=2364&height=3129" target="_blank">Flower Pot</a></figcaption>
+    </figure>    
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQQzM6Wo3ikmQrV-dyYdjpxEAYmszgnwGSajjNhFLrDRjWw?width=2585&height=1961" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQQzM6Wo3ikmQrV-dyYdjpxEAYmszgnwGSajjNhFLrDRjWw?width=2585&height=1961" target="_blank">Book</a></figcaption>
+    </figure>      
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRViktAb5XLQJRfkuEeH96uATY0WZDS4B5KzQi2ScPW6Wo?width=2225&height=2979" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRViktAb5XLQJRfkuEeH96uATY0WZDS4B5KzQi2ScPW6Wo?width=2225&height=2979" target="_blank">Bird</a></figcaption>
+    </figure>    
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRHFucU_h9lSbh8wTJRp4dfAR7T0dtavmAjZHVIoMlqe7E?width=1973&height=2467" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQRHFucU_h9lSbh8wTJRp4dfAR7T0dtavmAjZHVIoMlqe7E?width=1973&height=2467" target="_blank">Flowers</a></figcaption>
+    </figure>    
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT9RexeKawSQb_mD3PI5F_6AYb4kx3YvjdCYTxtzs8ifRA?width=2118&height=2783" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT9RexeKawSQb_mD3PI5F_6AYb4kx3YvjdCYTxtzs8ifRA?width=2118&height=2783" target="_blank">Snow Mountain</a></figcaption>
+    </figure>    
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTa9tP4Vs9SRJEK0wgWl4CbAWazeDUmtiwxK_L_mTyWTpg?width=2474&height=3298" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTa9tP4Vs9SRJEK0wgWl4CbAWazeDUmtiwxK_L_mTyWTpg?width=2474&height=3298" target="_blank">Mountain in Fall</a></figcaption>
+    </figure>       
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQQJjUgJOLdgSqFBddN_FKCMAf79DFIEuhz-ihZL26qR-II?width=2501&height=1944" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQQJjUgJOLdgSqFBddN_FKCMAf79DFIEuhz-ihZL26qR-II?width=2501&height=1944" target="_blank">Swan</a></figcaption>
+    </figure>    
+    <figure class="art-piece">
+        <img src="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSkGNWHcKJMQKF4J3CyfGdZAdAzQfGci4xEPEfrsnloPiQ?width=2299&height=2955" style="width:100%">
+        <figcaption><a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSkGNWHcKJMQKF4J3CyfGdZAdAzQfGci4xEPEfrsnloPiQ?width=2299&height=2955" target="_blank">Apple</a></figcaption>
+    </figure>             
+    <div class="home-button">
+        <button onclick="window.location.href='index.html';">Back to Home</button>
     </div>
 </body>
 </html>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-
-function currentSlide(n) {
-    showSlide(slideIndex = n);
-}
-
-function showSlide(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-}
-
-document.querySelectorAll('.mySlides img').forEach((img, index) => {
-    img.addEventListener('click', () => {
-        window.open(img.src, '_blank');
-    });
-});
-</script>
-
-<style>
-.slideshow-container {
-    position: relative;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-img {
-    vertical-align: middle;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    cursor: pointer;
-}
-
-.active {
-    background-color: #717171;
-}
-</style>
