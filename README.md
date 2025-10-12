@@ -2,6 +2,8 @@
 
 A modern, vivid portfolio website showcasing Sandra Chen's artwork, achievements, and published books.
 
+🌐 **Live Website**: https://partiallysunnypark.github.io/my-simple-website/
+
 ## Features
 
 ### 🎨 Art Gallery
