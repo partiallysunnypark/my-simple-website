@@ -277,6 +277,26 @@
             border-color: rgba(255, 255, 255, 0.6);
         }
         
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .profile-image {
+            width: 320px;
+            height: 500px;
+            border-radius: 15px;
+            border: 4px solid rgba(255, 255, 255, 0.4);
+            object-fit: cover;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.05);
+            border-color: rgba(255, 255, 255, 0.7);
+        }
+        
         .cta-section {
             text-align: center;
             margin-top: 40px;
@@ -338,6 +358,9 @@
     <div class="container">
         <div class="hero-section">
             <h2>Welcome to My Creative World</h2>
+            <div class="profile-section">
+                <img src="images/profilePicture.jpg" alt="Sandra Chen" class="profile-image" loading="lazy">
+            </div>
             <p>Discover the artistic journey of a young creative mind. From award-winning artwork to published books, explore a world where imagination comes to life through colors, stories, and dreams.</p>
             
             <div class="features-grid">
