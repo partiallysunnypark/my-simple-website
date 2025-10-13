@@ -235,6 +235,48 @@
             font-size: 0.95em;
         }
         
+        .art-preview {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .art-preview img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .art-preview img:hover {
+            transform: scale(1.1);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .book-preview {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+        }
+        
+        .book-preview img {
+            width: 80px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .book-preview img:hover {
+            transform: scale(1.1);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+        
         .cta-section {
             text-align: center;
             margin-top: 40px;
@@ -302,12 +344,20 @@
                 <div class="feature-card" onclick="window.location.href='art.html'">
                     <span class="feature-icon">🎨</span>
                     <h3>Award-Winning Art</h3>
+                    <div class="art-preview">
+                        <img src="images/AndersenBird.jpg" alt="Andersen Bird - Silver Award 2024" loading="lazy">
+                        <img src="images/In the mirror.jpg" alt="In the Mirror - 2nd Award of Excellence 2024" loading="lazy">
+                        <img src="images/DragonEye.jpg" alt="Dragon Eye - High Merit 2024" loading="lazy">
+                    </div>
                     <p>Explore my collection of paintings and drawings that have won recognition in various art competitions and exhibitions.</p>
                 </div>
                 
                 <div class="feature-card" onclick="window.location.href='books.html'">
                     <span class="feature-icon">📖</span>
                     <h3>Published Author</h3>
+                    <div class="book-preview">
+                        <img src="https://m.media-amazon.com/images/I/71VIyOkPeYL._SY342_.jpg" alt="The Land Beyond the Pages book cover" loading="lazy">
+                    </div>
                     <p>Read about my published book "The Land Beyond the Pages" - written and illustrated at age 8, now available on Amazon.</p>
                 </div>
                 
