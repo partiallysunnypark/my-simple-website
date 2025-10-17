@@ -197,10 +197,225 @@
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         }
         
+        .soccer-gallery {
+            margin-top: 40px;
+        }
+        
+        .gallery-section-title {
+            color: white;
+            font-size: 1.8em;
+            margin: 30px 0 20px 0;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Championship subsection styling */
+        .championship-subsection {
+            margin-bottom: 40px;
+        }
+        
+        .subsection-title {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 500;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+            padding-bottom: 10px;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .soccer-photo {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 15px;
+            border: 1px solid rgba(124, 252, 0, 0.3);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .soccer-photo:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            border-color: rgba(124, 252, 0, 0.5);
+        }
+        
+        .soccer-photo img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .soccer-photo figcaption {
+            color: white;
+            font-size: 1.1em;
+            font-weight: 500;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Teams Section Styles */
+        .teams-section {
+            margin: 30px 0;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(124, 252, 0, 0.3);
+        }
+        
+        .teams-title {
+            color: white;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .teams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .team-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(124, 252, 0, 0.2);
+        }
+        
+        .team-card h4 {
+            color: #7CFC00;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .team-card p {
+            margin-bottom: 15px;
+        }
+        
+        .team-card a {
+            color: #87CEEB;
+            text-decoration: none;
+        }
+        
+        .team-card a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .team-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .team-card li {
+            color: rgba(255, 255, 255, 0.9);
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(124, 252, 0, 0.1);
+        }
+        
+        /* Championship Grid - Highlighted */
+        .championship-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        /* Team photos - one per row */
+        .championship-grid.team-grid {
+            grid-template-columns: 1fr;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        
+        .champion-photo {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 255, 255, 0.1));
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 15px;
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .champion-photo:hover {
+            transform: translateY(-10px);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 255, 255, 0.2));
+            box-shadow: 0 25px 50px rgba(255, 215, 0, 0.3);
+            border-color: rgba(255, 215, 0, 0.8);
+        }
+        
+        .champion-photo img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        /* Vertical frame for single player photos */
+        .champion-photo.single-player {
+            max-width: 280px;
+            margin: 0 auto;
+        }
+        
+        .champion-photo.single-player img {
+            height: 300px;
+            aspect-ratio: 3/4;
+        }
+        
+        /* Individual achievements grid layout - 3 in a line */
+        .individual-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 280px);
+            gap: 30px;
+            justify-content: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 900px) {
+            .individual-grid {
+                grid-template-columns: repeat(2, 280px);
+            }
+        }
+        
+        @media (max-width: 620px) {
+            .individual-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .champion-photo.single-player {
+                max-width: 250px;
+            }
+        }
+        
+        .champion-photo figcaption {
+            color: #FFD700;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        
         @media (max-width: 768px) {
             header h1 { font-size: 2em; }
             .container { padding: 25px; margin: 20px; }
             .container h2 { font-size: 1.8em; }
+            .gallery-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -213,7 +428,118 @@
         </div>
     </div>
     
-
+    <header>
+        <h1>⚽ Soccer Adventures</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Soccer Journey & Team Spirit</h2>
+        <p>Capturing the excitement, teamwork, and passion of soccer through memorable moments on and off the field.</p>
+        
+        <!-- Championship Highlights - COMBINED SECTION -->
+        <div class="soccer-gallery">
+            <h3 class="gallery-section-title">Championship Victories</h3>
+            
+            <!-- Team Championships -->
+            <div class="championship-subsection">
+                <div class="championship-grid team-grid">
+                    <figure class="champion-photo">
+                        <img src="resources/images/soccer/USFC2025_9_1_LaborDayCup_Champion_team.JPG" alt="Labor Day Cup Champions 2025 Team" loading="lazy">
+                        <figcaption>Labor Day Cup Champions Team 2025</figcaption>
+                    </figure>
+                    <figure class="champion-photo">
+                        <img src="resources/images/soccer/USFC2025_8_3_PAC_Champion_team.jpg" alt="PAC Champions 2025 Team" loading="lazy">
+                        <figcaption>PAC Champions Team 2025</figcaption>
+                    </figure>
+                    <figure class="champion-photo">
+                        <img src="resources/images/soccer/USFC2025_1_WinterClassic_Champion_team.JPG" alt="Winter Classic Champions 2025 Team" loading="lazy">
+                        <figcaption>Winter Classic Champions 2025</figcaption>
+                    </figure>
+                    <figure class="champion-photo">
+                        <img src="resources/images/soccer/USFC2024_4_20_WPL_Champion_team.jpg" alt="WPL Champions 2024 Team" loading="lazy">
+                        <figcaption>WPL Champions 2024</figcaption>
+                    </figure>
+                    <figure class="champion-photo">
+                        <img src="resources/images/soccer/USFC2022_11_13_WPL_Champion_team.jpg" alt="WPL Champions 2022 Team" loading="lazy">
+                        <figcaption>WPL Champions 2022</figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+            <!-- Individual Achievements -->
+            <div class="championship-subsection">
+                <div class="championship-grid individual-grid">
+                    <figure class="champion-photo single-player">
+                        <img src="resources/images/soccer/USFC2025_9_1_LaborDayCup_Champion_single.jpg" alt="Labor Day Cup Champions 2025 Individual" loading="lazy">
+                    </figure>
+                    <figure class="champion-photo single-player">
+                        <img src="resources/images/soccer/USFC2025_8_3_PAC_Champion_single.jpg" alt="PAC Champions 2025 Individual" loading="lazy">
+                    </figure>
+                    <figure class="champion-photo single-player">
+                        <img src="resources/images/soccer/USFC2022_11_13_WPL_Champion_single.jpg" alt="WPL Champions 2022 Individual" loading="lazy">
+                    </figure>
+                </div>
+            </div>
+        </div>
+            
+        <!-- Teams Information Section -->
+        <div class="teams-section">
+            <h3 class="teams-title">Teams & Clubs</h3>
+            <div class="teams-grid">
+                <div class="team-card">
+                    <h4>🏆 United Sports Football Club</h4>
+                    <p><a href="https://www.unitedsportsfc.org/" target="_blank">www.unitedsportsfc.org</a></p>
+                    <ul>
+                        <li>2025 - 2026: G15</li>
+                        <li>2024 - 2025: G1516</li>
+                        <li>2023 - 2024: G1415</li>
+                        <li>2022 - 2023: G1415</li>
+                    </ul>
+                </div>
+                <div class="team-card">
+                    <h4>🔥 Crossfire Soccer Premier</h4>
+                    <p><a href="https://www.crossfiresoccer.org/" target="_blank">www.crossfiresoccer.org</a></p>
+                    <ul>
+                        <li>2024 - 2025: G15 RCL</li>
+                        <li>2023 - 2024: XF U8U9</li>
+                        <li>2022 - 2023: XF U8U9</li>
+                        <li>2021 Winter - 2022 Fall: XF U8</li>
+                        <li>2021 Fall - 2021 Winter: XF Future</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            
+            <!-- Team Action Gallery -->
+            <h3 class="gallery-section-title">⚡ Game Action</h3>
+            <div class="gallery-grid">
+                <figure class="soccer-photo">
+                    <img src="resources/images/soccer/XF2022_6_1.JPG" alt="Crossfire Game Action" loading="lazy">
+                    <figcaption>⚽ Crossfire Action</figcaption>
+                </figure>
+                <figure class="soccer-photo">
+                    <img src="resources/images/soccer/XF2022_6_3.JPG" alt="Team Coordination" loading="lazy">
+                    <figcaption>🤝 Team Coordination</figcaption>
+                </figure>
+                <figure class="soccer-photo">
+                    <img src="resources/images/soccer/USFC2024_2_19.JPG" alt="USFC Match" loading="lazy">
+                    <figcaption>🏃‍♀️ USFC Match</figcaption>
+                </figure>
+                <figure class="soccer-photo">
+                    <img src="resources/images/soccer/XF2022_6_5.JPG" alt="Field Play" loading="lazy">
+                    <figcaption>⚽ Field Play</figcaption>
+                </figure>
+                <figure class="soccer-photo">
+                    <img src="resources/images/soccer/XF2022_7_19.JPG" alt="Summer Tournament" loading="lazy">
+                    <figcaption>☀️ Summer Tournament</figcaption>
+                </figure>
+                <figure class="soccer-photo">
+                    <img src="resources/images/soccer/XF2022_6_6.JPG" alt="Team Spirit" loading="lazy">
+                    <figcaption>💪 Team Spirit</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
     
     <div class="home-button">
         <button onclick="window.location.href='index.html';">🏠 Back to Home</button>

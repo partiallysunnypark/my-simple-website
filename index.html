@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandra Chen - Young Artist & Author</title>
+    <title>Sandra Chen - Young Artist, Author & Soccer Champion</title>
     <style>
         * {
             margin: 0;
@@ -194,9 +194,12 @@
         
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: 1fr;
             gap: 25px;
             margin-top: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .feature-card {
@@ -244,8 +247,8 @@
         }
         
         .art-preview img {
-            width: 80px;
-            height: 80px;
+            width: 160px;
+            height: 160px;
             object-fit: cover;
             border-radius: 8px;
             border: 2px solid rgba(255, 255, 255, 0.3);
@@ -264,8 +267,8 @@
         }
         
         .book-preview img {
-            width: 80px;
-            height: 120px;
+            width: 160px;
+            height: 240px;
             object-fit: cover;
             border-radius: 8px;
             border: 2px solid rgba(255, 255, 255, 0.3);
@@ -273,8 +276,31 @@
         }
         
         .book-preview img:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             border-color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .soccer-preview {
+            display: flex;
+            gap: 8px;
+            margin: 15px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .soccer-preview img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .soccer-preview img:hover {
+            transform: scale(1.1);
+            border-color: rgba(255, 215, 0, 0.8);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
         }
         
         .profile-section {
@@ -342,7 +368,7 @@
     
     <header>
         <h1>Sandra Chen</h1>
-        <div class="subtitle">Young Artist • Author • Creative Mind</div>
+        <div class="subtitle">Young Artist • Author • Soccer Champion • Creative Mind</div>
     </header>
     
     <nav>
@@ -350,7 +376,6 @@
             <li><a href="index.html">🏠 Home</a></li>
             <li><a href="art.html">🎨 Art Gallery</a></li>
             <li><a href="books.html">📚 Books</a></li>
-            <li><a href="chinese_zodiac.html">🐉 Chinese Zodiac</a></li>
             <li><a href="soccer.html">⚽ Soccer</a></li>
         </ul>
     </nav>
@@ -359,18 +384,18 @@
         <div class="hero-section">
             <h2>Welcome to My Creative World</h2>
             <div class="profile-section">
-                <img src="images/profilePicture.jpg" alt="Sandra Chen" class="profile-image" loading="lazy">
+                <img src="resources/images/profilePicture.jpg" alt="Sandra Chen" class="profile-image" loading="lazy">
             </div>
-            <p>Discover the artistic journey of a young creative mind. From award-winning artwork to published books, explore a world where imagination comes to life through colors, stories, and dreams.</p>
+            <p>Discover the artistic journey of a young creative mind. From award-winning artwork to published books and championship soccer victories, explore a world where imagination comes to life through colors, stories, athletics, and dreams. My art gallery now includes traditional Chinese cultural artwork celebrating Eastern artistic traditions.</p>
             
             <div class="features-grid">
                 <div class="feature-card" onclick="window.location.href='art.html'">
                     <span class="feature-icon">🎨</span>
                     <h3>Award-Winning Art</h3>
                     <div class="art-preview">
-                        <img src="images/AndersenBird.jpg" alt="Andersen Bird - Silver Award 2024" loading="lazy">
-                        <img src="images/In the mirror.jpg" alt="In the Mirror - 2nd Award of Excellence 2024" loading="lazy">
-                        <img src="images/DragonEye.jpg" alt="Dragon Eye - High Merit 2024" loading="lazy">
+                        <img src="resources/images/AndersenBird.jpg" alt="Andersen Bird - Silver Award 2024" loading="lazy">
+                        <img src="resources/images/In the mirror.jpg" alt="In the Mirror - 2nd Award of Excellence 2024" loading="lazy">
+                        <img src="resources/images/DragonEye.jpg" alt="Dragon Eye - High Merit 2024" loading="lazy">
                     </div>
                     <p>Explore my collection of paintings and drawings that have won recognition in various art competitions and exhibitions.</p>
                 </div>
@@ -384,10 +409,15 @@
                     <p>Read about my published book "The Land Beyond the Pages" - written and illustrated at age 8, now available on Amazon.</p>
                 </div>
                 
-                <div class="feature-card" onclick="window.location.href='chinese_zodiac.html'">
-                    <span class="feature-icon">🐲</span>
-                    <h3>Cultural Art</h3>
-                    <p>Discover my Chinese zodiac artwork celebrating traditional culture and the beauty of Eastern artistic traditions.</p>
+                <div class="feature-card" onclick="window.location.href='soccer.html'">
+                    <span class="feature-icon">⚽</span>
+                    <h3>Soccer Achievements</h3>
+                    <div class="soccer-preview">
+                        <img src="resources/images/soccer/USFC2025_9_1_LaborDayCup_Champion_single.jpg" alt="Soccer Championship 2025" loading="lazy">
+                        <img src="resources/images/soccer/USFC2025_8_3_PAC_Champion_team.jpg" alt="PAC Champions 2025" loading="lazy">
+                        <img src="resources/images/soccer/USFC2024_4_20_WPL_Champion_team.jpg" alt="WPL Champions 2024" loading="lazy">
+                    </div>
+                    <p>Follow my soccer journey with multiple championship victories including Labor Day Cup, PAC Championships, and WPL titles.</p>
                 </div>
             </div>
             

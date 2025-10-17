@@ -1,0 +1,119 @@
+{
+    // ==========================================
+    // SANDRA CHEN'S PORTFOLIO - CODING STANDARDS
+    // ==========================================
+    
+    // FILE FORMATTING & STYLE
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.encoding": "utf8",
+    
+    // HTML STANDARDS
+    "html.format.indentInnerHtml": true,
+    "html.format.wrapLineLength": 120,
+    "html.format.preserveNewLines": true,
+    "html.format.maxPreserveNewLines": 2,
+    "html.suggest.html5": true,
+    
+    // CSS STANDARDS  
+    "css.format.spaceAroundSelectorSeparator": true,
+    "css.format.braceStyle": "collapse",
+    "css.lint.duplicateProperties": "warning",
+    "css.lint.emptyRules": "warning",
+    
+    // FILE ASSOCIATIONS
+    "files.associations": {
+        "*.html": "html",
+        "*.css": "css",
+        "*.js": "javascript",
+        "*.ps1": "powershell"
+    },
+    
+    // EMMET SUPPORT
+    "emmet.includeLanguages": {
+        "html": "html"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    
+    // PROJECT STRUCTURE GUIDELINES
+    // ==========================================
+    // FOLDER ORGANIZATION:
+    // resources/images/     - All optimized images
+    // resources/documents/  - Text files, data files
+    // tools/               - Scripts and utilities
+    // 
+    // IMAGE OPTIMIZATION RULES:
+    // - Use ImageMagick for batch processing
+    // - Target 800px width for web display
+    // - Convert HEIC to JPG automatically
+    // - Maintain quality 85-90 for web
+    // 
+    // HTML NAMING CONVENTIONS:
+    // - Use semantic class names (championship-grid, team-card)
+    // - Include alt text for all images
+    // - Use loading="lazy" for performance
+    // - Follow vivid gradient design theme
+    // 
+    // CSS STANDARDS:
+    // - Use CSS custom properties for colors
+    // - Maintain responsive design (mobile-first)
+    // - Glass morphism effects for cards
+    // - Consistent spacing with rem units
+    // ==========================================
+    
+    // LIVE SERVER SETTINGS
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    
+    // INTELLISENSE ENHANCEMENTS
+    "html.autoClosingTags": true,
+    "html.autoCreateQuotes": true,
+    "css.completion.triggerPropertyValueCompletion": true,
+    
+    // WORKSPACE SPECIFIC EXCLUSIONS
+    "files.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    
+    // SEARCH CONFIGURATION
+    "search.exclude": {
+        "resources/images/**": true,
+        "tools/temp/**": true
+    },
+    
+    // GITHUB COPILOT INSTRUCTIONS
+    "github.copilot.chat.instructions": [
+        {
+            "text": "You are working on Sandra Chen's personal portfolio website. This is a vivid, modern website showcasing her achievements in soccer, art, and academics."
+        },
+        {
+            "text": "PROJECT CONTEXT: Static HTML/CSS website hosted on GitHub Pages with custom domain sandrachen.me. Features vivid gradient design with glass morphism effects."
+        },
+        {
+            "text": "DESIGN SYSTEM: Use vivid gradients (purple, blue, pink), glass morphism cards, floating animations, responsive mobile-first design. Maintain consistent spacing with rem units."
+        },
+        {
+            "text": "FOLDER STRUCTURE: resources/images/ (optimized images), resources/documents/ (data files), tools/ (PowerShell scripts). Always use semantic class names."
+        },
+        {
+            "text": "IMAGE OPTIMIZATION: Use ImageMagick via PowerShell scripts. Target 800px width, 85-90% quality. Auto-convert HEIC to JPG. Include alt text and loading='lazy'."
+        },
+        {
+            "text": "SOCCER PAGE PRIORITY: Championship victories come first, then teams/clubs. Combine single and team photos under one 'Championship Victories' tile without subsection titles. For team photos, display one photo per row. For single player photos, use vertical picture frames with 3 photos per line and no titles/captions. Place latest pictures first in chronological order. Keep emoji usage minimal across the website. No duplicate pictures - each image should appear only once."
+        },
+        {
+            "text": "CODE STANDARDS: 4-space indentation, semantic HTML, CSS custom properties, mobile-responsive, clean commenting. Format on save enabled."
+        },
+        {
+            "text": "When suggesting code changes, maintain the vivid aesthetic and ensure all images are properly optimized and organized in the resources folder structure."
+        }
+    ]
+}
