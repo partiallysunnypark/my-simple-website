@@ -2,7 +2,6 @@
     // ==========================================
     // SANDRA CHEN'S PORTFOLIO - CODING STANDARDS
     // ==========================================
-    
     // FILE FORMATTING & STYLE
     "editor.formatOnSave": true,
     "editor.tabSize": 4,
@@ -12,20 +11,17 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.encoding": "utf8",
-    
     // HTML STANDARDS
     "html.format.indentInnerHtml": true,
     "html.format.wrapLineLength": 120,
     "html.format.preserveNewLines": true,
     "html.format.maxPreserveNewLines": 2,
     "html.suggest.html5": true,
-    
-    // CSS STANDARDS  
+    // CSS STANDARDS
     "css.format.spaceAroundSelectorSeparator": true,
     "css.format.braceStyle": "collapse",
     "css.lint.duplicateProperties": "warning",
     "css.lint.emptyRules": "warning",
-    
     // FILE ASSOCIATIONS
     "files.associations": {
         "*.html": "html",
@@ -33,48 +29,43 @@
         "*.js": "javascript",
         "*.ps1": "powershell"
     },
-    
     // EMMET SUPPORT
     "emmet.includeLanguages": {
         "html": "html"
     },
     "emmet.triggerExpansionOnTab": true,
-    
     // PROJECT STRUCTURE GUIDELINES
     // ==========================================
     // FOLDER ORGANIZATION:
     // resources/images/     - All optimized images
     // resources/documents/  - Text files, data files
     // tools/               - Scripts and utilities
-    // 
+    //
     // IMAGE OPTIMIZATION RULES:
     // - Use ImageMagick for batch processing
     // - Target 800px width for web display
     // - Convert HEIC to JPG automatically
     // - Maintain quality 85-90 for web
-    // 
+    //
     // HTML NAMING CONVENTIONS:
     // - Use semantic class names (championship-grid, team-card)
     // - Include alt text for all images
     // - Use loading="lazy" for performance
     // - Follow vivid gradient design theme
-    // 
+    //
     // CSS STANDARDS:
     // - Use CSS custom properties for colors
     // - Maintain responsive design (mobile-first)
     // - Glass morphism effects for cards
     // - Consistent spacing with rem units
     // ==========================================
-    
     // LIVE SERVER SETTINGS
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
-    
     // INTELLISENSE ENHANCEMENTS
     "html.autoClosingTags": true,
     "html.autoCreateQuotes": true,
     "css.completion.triggerPropertyValueCompletion": true,
-    
     // WORKSPACE SPECIFIC EXCLUSIONS
     "files.exclude": {
         "**/.git": true,
@@ -82,13 +73,11 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true
     },
-    
     // SEARCH CONFIGURATION
     "search.exclude": {
         "resources/images/**": true,
         "tools/temp/**": true
     },
-    
     // GITHUB COPILOT INSTRUCTIONS
     "github.copilot.chat.instructions": [
         {
