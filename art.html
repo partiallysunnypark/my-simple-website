@@ -14,7 +14,11 @@
 
             body {
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                background-color: #5865d8;
+                background-image: url('resources/images/art/nov2025/IBelong.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
                 min-height: 100vh;
                 overflow-x: hidden;
             }
@@ -27,7 +31,7 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                background: linear-gradient(135deg, rgba(102, 126, 234, 0.75) 0%, rgba(118, 75, 162, 0.82) 100%);
             }
 
             .floating-shapes {
@@ -53,18 +57,18 @@
             }
 
             .shape:nth-child(2) {
-                width: 120px;
-                height: 120px;
-                top: 20%;
-                right: 10%;
+                width: 60px;
+                height: 60px;
+                top: 70%;
+                left: 80%;
                 animation-delay: 2s;
             }
 
             .shape:nth-child(3) {
-                width: 60px;
-                height: 60px;
-                bottom: 20%;
-                left: 20%;
+                width: 100px;
+                height: 100px;
+                top: 40%;
+                left: 70%;
                 animation-delay: 4s;
             }
 
@@ -73,199 +77,260 @@
                 0%,
                 100% {
                     transform: translateY(0px) rotate(0deg);
+                    opacity: 0.7;
                 }
 
                 50% {
                     transform: translateY(-20px) rotate(180deg);
+                    opacity: 0.9;
                 }
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                position: relative;
+                z-index: 1;
             }
 
             header {
-                background: rgba(255, 255, 255, 0.15);
-                backdrop-filter: blur(10px);
-                padding: 20px 0;
                 text-align: center;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-                animation: slideDown 1s ease-out;
-            }
-
-            @keyframes slideDown {
-                from {
-                    transform: translateY(-100%);
-                }
-
-                to {
-                    transform: translateY(0);
-                }
+                margin-bottom: 40px;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                border-radius: 20px;
+                padding: 30px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
             }
 
             header h1 {
                 color: white;
                 font-size: 2.5em;
-                font-weight: 300;
+                margin-bottom: 20px;
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-                margin-bottom: 10px;
             }
 
-            .container {
-                max-width: 1200px;
-                margin: 20px auto;
-                padding: 0 20px;
-                animation: fadeIn 1s ease-out 0.3s both;
+            .home-button {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: wrap;
             }
 
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                    transform: translateY(30px);
-                }
-
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
+            .home-button button {
+                background: rgba(255, 255, 255, 0.2);
+                color: white;
+                padding: 12px 25px;
+                border-radius: 25px;
+                cursor: pointer;
+                font-size: 1em;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(5px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
             }
 
-            .award-list {
+            .home-button button:hover {
+                background: rgba(255, 255, 255, 0.3);
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .award-summary {
                 background: rgba(255, 255, 255, 0.15);
-                backdrop-filter: blur(15px);
+                backdrop-filter: blur(12px);
                 border-radius: 20px;
                 padding: 30px;
                 margin-bottom: 30px;
-                border: 1px solid rgba(255, 255, 255, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.25);
                 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             }
 
-            .award-list p {
-                color: rgba(255, 255, 255, 0.9);
-                font-size: 1.1em;
-                line-height: 1.8;
-                margin-bottom: 15px;
-            }
-
-            .award-list strong {
+            .award-summary h2 {
                 color: white;
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+                font-size: 1.8em;
+                text-align: center;
+                margin-bottom: 20px;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
             }
 
-            .award-list a {
-                color: #feca57;
+            .award-summary p {
+                color: rgba(255, 255, 255, 0.92);
+                font-size: 1.05em;
+                line-height: 1.7;
+                margin-bottom: 12px;
+            }
+
+            .award-summary strong {
+                color: white;
+            }
+
+            .award-summary a {
+                color: #ffecb3;
                 text-decoration: none;
-                font-weight: bold;
-                transition: all 0.3s ease;
+                font-weight: 500;
             }
 
-            .award-list a:hover {
-                color: #ff9ff3;
-                text-shadow: 0 0 10px rgba(255, 159, 243, 0.5);
+            .award-summary a:hover {
+                text-decoration: underline;
             }
 
             .gallery-title {
                 color: white;
                 font-size: 2.2em;
                 text-align: center;
-                margin: 40px 0 30px 0;
-                font-weight: 300;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                margin-bottom: 20px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             }
 
             .section-title {
                 color: white;
-                font-size: 1.8em;
+                font-size: 2em;
                 text-align: center;
-                margin: 30px 0 20px 0;
-                font-weight: 300;
-                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+                margin: 40px 0 30px 0;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             }
 
             .art-piece {
+                margin: 30px auto;
+                max-width: 680px;
                 background: rgba(255, 255, 255, 0.1);
-                backdrop-filter: blur(10px);
                 border-radius: 15px;
-                margin: 25px auto;
                 padding: 20px;
-                border: 1px solid rgba(255, 255, 255, 0.2);
                 transition: all 0.3s ease;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-                max-width: 600px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
             }
 
             .art-piece:hover {
                 transform: translateY(-5px);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
                 background: rgba(255, 255, 255, 0.15);
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
             }
 
             .art-piece img {
                 width: 100%;
-                height: auto;
                 border-radius: 10px;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
                 transition: transform 0.3s ease;
             }
 
-            .art-piece:hover img {
+            .art-piece img:hover {
                 transform: scale(1.02);
             }
 
             .art-piece figcaption {
-                text-align: center;
                 margin-top: 15px;
-                font-size: 1em;
-                color: rgba(255, 255, 255, 0.9);
-                font-weight: 500;
+                text-align: center;
+                font-size: 1.1em;
+                line-height: 1.6;
             }
 
             .art-piece figcaption a {
-                color: #feca57;
+                color: rgba(255, 255, 255, 0.9);
+                text-decoration: none;
+                transition: color 0.3s ease;
+                font-weight: 500;
+            }
+
+            .art-piece figcaption a:hover {
+                color: white;
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            }
+
+            .collection-slider-wrapper {
+                max-width: 720px;
+                margin: 0 auto 40px auto;
+            }
+
+            .collection-slider {
+                position: relative;
+            }
+
+            .collection-slide {
+                display: none;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            }
+
+            .collection-slide.active {
+                display: block;
+                opacity: 1;
+            }
+
+            .collection-controls {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 15px;
+            }
+
+            .collection-button {
+                background: rgba(255, 255, 255, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                color: white;
+                padding: 8px 18px;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-weight: 500;
+            }
+
+            .collection-button:hover {
+                background: rgba(255, 255, 255, 0.3);
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .collection-dots {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+            }
+
+            .collection-dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid rgba(255, 255, 255, 0.6);
+                background: rgba(255, 255, 255, 0.2);
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .collection-dot.active {
+                background: rgba(255, 255, 255, 0.85);
+                transform: scale(1.2);
+            }
+
+            .return-home {
+                text-align: center;
+                margin: 40px 0 20px;
+            }
+
+            .return-home a {
+                display: inline-block;
+                background: rgba(255, 255, 255, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                color: white;
+                padding: 12px 28px;
+                border-radius: 25px;
+                font-weight: 600;
                 text-decoration: none;
                 transition: all 0.3s ease;
             }
 
-            .art-piece figcaption a:hover {
-                color: #ff9ff3;
-                text-shadow: 0 0 10px rgba(255, 159, 243, 0.5);
-            }
-
-            .home-button {
-                margin-top: 20px;
-                text-align: center;
-            }
-
-            .home-button button {
-                background: linear-gradient(45deg, #3498db, #2980b9);
-                color: white;
-                border: none;
-                padding: 15px 30px;
-                border-radius: 25px;
-                cursor: pointer;
-                font-size: 1.1em;
-                font-weight: bold;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                transition: all 0.3s ease;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            }
-
-            .home-button button:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            .return-home a:hover {
+                background: rgba(255, 255, 255, 0.3);
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             }
 
             @media (max-width: 768px) {
-                header h1 {
-                    font-size: 2em;
-                }
-
                 .gallery-title {
-                    font-size: 1.8em;
-                }
-
-                .section-title {
                     font-size: 1.5em;
-                }
-
-                .award-list {
-                    padding: 20px;
                 }
             }
         </style>
@@ -282,200 +347,194 @@
         <header>
             <h1>🎨 Art Awards & Gallery</h1>
             <div class="home-button">
-                <button onclick="window.location.href='index.html';">🏠 Back to Home</button>
+                <button onclick="window.location.href='full_gallery.html';"
+                    style="background: linear-gradient(45deg, #ffd700, #ffed4e); color: #333;">🖼️ View Full
+                    Gallery</button>
             </div>
         </header>
 
         <div class="container">
-            <div class="award-list">
-                <p><strong>Silver award in junior painting category, H.C. Andersen Art Awards - 2024</strong>
-                    - <a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSVTkcxoyCOQYzQSI5SDa0IAZW4PM1VvcspJ6xESK6TdTM?width=2417&height=1872"
-                        target="_blank">Bird</a>.
-                </p>
-                <p><strong>2nd award of excellence, Horace Mann Art Reflection - 2024</strong>
-                    - <a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTnLBjhWlVJR7AIQa6wmGXgAcwjzgNxF42IWxsKLA5dBWY?width=1024"
-                        target="_blank">In the Mirror</a>.
-                </p>
-                <p><strong>Award of excellence, Horace Mann Art Reflection - 2023</strong>
-                    - <a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTbE_F9c5tDQYbkdPyjspvnAZ6OwThjlvXMF5ClUzMK6wM?width=3024&height=4032"
-                        target="_blank">Sunset</a>.
-                </p>
-                <p><strong>High Merit, Celebrating Art, Summer 2024</strong>
-                    - <a href="https://www.celebratingart.com/high-merit?id=320271&grade=3&contestname=Summer%202024&biggrade=K-3&wintp=filemaker"
-                        target="_blank">I see you</a>.
-                </p>
-                <p><strong>High Merit, Celebrating Art, Summer 2023</strong>
-                    - <a href="https://www.celebratingart.com/high-merit?id=285631&grade=1&contestname=Summer%202023&biggrade=K-3&wintp=filemaker"
-                        target="_blank">Peacock</a>.
-                </p>
-                <p><strong>Invite to publish, Celebrating Art - Fall 2022</strong>
-                    - <a href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT0DjVp5gk-T4SnvKkWqX5AAc98KnrlQ77IWUGWarQgbOM?width=2911&height=3576"
-                        target="_blank">Owl</a>.
-                </p>
-            </div>
-
-            <h1 class="gallery-title">✨ Kids Art Gallery ✨</h1>
-            <p style="text-align: center; color: rgba(255, 255, 255, 0.9); margin-bottom: 30px; font-size: 1.1em;">
-                Featuring award-winning artwork, creative expressions, and traditional Chinese cultural art celebrating
-                Eastern artistic traditions.</p>
-
-            <h2 class="section-title">🏆 Award-Winning Pieces</h2>
-            <figure class="art-piece">
-                <img src="resources/images/AndersenBird.jpg" style="width:100%" loading="lazy">
-                <figcaption><a
+            <div class="award-summary">
+                <h2>🏆 Award Highlights</h2>
+                <p><strong>Silver award</strong> in junior painting category, <a
                         href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSVTkcxoyCOQYzQSI5SDa0IAZW4PM1VvcspJ6xESK6TdTM?width=2417&height=1872"
-                        target="_blank">Andersen Bird - Silver award, H.C. Andersen Art Awards 2024</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/In the mirror.jpg" style="width:100%" loading="lazy">
-                <figcaption><a
+                        target="_blank">H.C. Andersen Art Awards 2024 (Bird)</a>.</p>
+                <p><strong>2nd award of excellence</strong>, Horace Mann Art Reflection - <a
                         href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTnLBjhWlVJR7AIQa6wmGXgAcwjzgNxF42IWxsKLA5dBWY?width=1024"
-                        target="_blank">In the Mirror - 2nd Award of excellence, H.M. Art Reflection 2024</a>
-                </figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/Sunset.jpg" style="width:100%" loading="lazy">
-                <figcaption><a
+                        target="_blank">2024 (In the Mirror)</a>.</p>
+                <p><strong>Award of excellence</strong>, Horace Mann Art Reflection - <a
                         href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTbE_F9c5tDQYbkdPyjspvnAZ6OwThjlvXMF5ClUzMK6wM?width=3024&height=4032"
-                        target="_blank">Sunset - Award of excellence, H.M. Art Reflection 2023</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/DragonEye.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/DragonEye.jpg" target="_blank">Dragon Eye - I See You, Celebrating
-                        Art Summer 2024, High Merit</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/Peacock.jpeg" style="width:100%" loading="lazy">
-                <figcaption><a
+                        target="_blank">2023 (Sunset)</a>.</p>
+                <p><strong>High Merit</strong>, Celebrating Art, Summer 2025 (<a
+                        href="https://www.celebratingart.com/high-merit?id=354163&grade=3&contestname=Summer%202025&biggrade=K-3&wintp=filemaker"
+                        target="_blank">Blueberries</a>).</p>
+                <p><strong>High Merit</strong>, Celebrating Art, Summer 2024 (<a
+                        href="resources/images/art/awards/DragonEye.jpg" target="_blank">I See You</a>).</p>
+                <p><strong>High Merit</strong>, Celebrating Art, Summer 2023 (<a
                         href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQScFezeKhwWSIPIoWtS-iPDAY9D4WkH2uW9L4OjKxfcdv4?width=1024"
-                        target="_blank">Peacock - High Merit, Celebrating Art Summer 2023</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/Owl.jpg" style="width:100%" loading="lazy">
-                <figcaption><a
+                        target="_blank">Peacock</a>).</p>
+                <p><strong>Invite to publish</strong>, Celebrating Art - Fall 2022 (<a
                         href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT0DjVp5gk-T4SnvKkWqX5AAc98KnrlQ77IWUGWarQgbOM?width=2911&height=3576"
-                        target="_blank">Owl - Invite to publish, Celebrating Art Fall 2022</a></figcaption>
-            </figure>
-
-            <h2 class="section-title">🐾 Animals</h2>
-            <figure class="art-piece">
-                <img src="resources/images/BirdGreen.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/BirdGreen.jpg" target="_blank">Bird Green</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/BirdInSnow.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/BirdInSnow.jpg" target="_blank">Bird in Snow</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/LittleBird.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/LittleBird.jpg" target="_blank">Little Bird</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/Deer.jpeg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/Deer.jpeg" target="_blank">Deer</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/Eagle.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/Eagle.jpg" target="_blank">Eagle</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/penguin.JPG" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/penguin.JPG" target="_blank">Penguin</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/rooster.JPG" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/rooster.JPG" target="_blank">Rooster</a></figcaption>
-            </figure>
-
-            <h2 class="section-title">🏮 Chinese/Asian Art</h2>
-            <figure class="art-piece">
-                <img src="resources/images/RiverInChina.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/RiverInChina.jpg" target="_blank">River in China</a></figcaption>
-            </figure>
-
-            <h2 class="section-title">🌸 Nature & Landscapes</h2>
-            <figure class="art-piece">
-                <img src="resources/images/Flowers.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/Flowers.jpg" target="_blank">Flowers</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/YellowFlowers.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/YellowFlowers.jpg" target="_blank">Yellow Flowers</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/FlowerInPod.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/FlowerInPod.jpg" target="_blank">Flower in Pod</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/FallMountain.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/FallMountain.jpg" target="_blank">Fall Mountain</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/SnowMontain.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/SnowMontain.jpg" target="_blank">Snow Mountain</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/Winter break in a snap.JPG" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/Winter break in a snap.JPG" target="_blank">Winter break in a
-                        snap</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/volcano.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/volcano.jpg" target="_blank">Volcano</a></figcaption>
-            </figure>
-
-            <h2 class="section-title">👥 People & Characters</h2>
-            <figure class="art-piece">
-                <img src="resources/images/PondAndGirl.jpg" style="width:100%" loading="lazy">
-                <figcaption><a
-                        href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQShKnpM1TWVS58TOYN0Sv7FAajll0aJTTbcieSV4kttgm4?width=1024"
-                        target="_blank">Pond and Girl</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/GirlInHat.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/GirlInHat.jpg" target="_blank">Girl in Hat</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/SnowMan.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/SnowMan.jpg" target="_blank">Snow Man</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/Alone.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/Alone.jpg" target="_blank">Alone</a></figcaption>
-            </figure>
-
-            <h2 class="section-title">🎭 Objects & Still Life</h2>
-            <figure class="art-piece">
-                <img src="resources/images/MagicBook.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/MagicBook.jpg" target="_blank">Magic Book</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/Cherry.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/Cherry.jpg" target="_blank">Cherry</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/Store.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/Store.jpg" target="_blank">Store</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/HuntedHouse.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/HuntedHouse.jpg" target="_blank">Hunted House</a></figcaption>
-            </figure>
-
-            <h2 class="section-title">🐉 Chinese Cultural Art</h2>
-            <figure class="art-piece">
-                <img src="resources/images/龙.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/龙.jpg" target="_blank">龙 (Dragon)</a></figcaption>
-            </figure>
-            <figure class="art-piece">
-                <img src="resources/images/蛇.jpg" style="width:100%" loading="lazy">
-                <figcaption><a href="resources/images/蛇.jpg" target="_blank">蛇 (Snake)</a></figcaption>
-            </figure>
-
-            <div class="home-button">
-                <button onclick="window.location.href='index.html';">🏠 Back to Home</button>
+                        target="_blank">Owl</a>).</p>
             </div>
+
+            <h2 class="section-title">🏆 Award-Winning Collection</h2>
+            <div class="collection-slider-wrapper">
+                <div class="collection-slider">
+                    <figure class="art-piece collection-slide active">
+                        <img src="resources/images/art/awards/AndersenBird.jpg" loading="lazy"
+                            alt="Bird painting awarded silver in junior painting, H.C. Andersen Art Awards 2024">
+                        <figcaption><a
+                                href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSVTkcxoyCOQYzQSI5SDa0IAZW4PM1VvcspJ6xESK6TdTM?width=2417&height=1872"
+                                target="_blank">Andersen Bird - Silver Award, H.C. Andersen Art Awards 2024</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="art-piece collection-slide">
+                        <img src="resources/images/art/awards/In the mirror.jpg" loading="lazy"
+                            alt="In the Mirror painting, 2nd award of excellence, Horace Mann Art Reflection 2024">
+                        <figcaption><a
+                                href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTnLBjhWlVJR7AIQa6wmGXgAcwjzgNxF42IWxsKLA5dBWY?width=1024"
+                                target="_blank">In the Mirror - 2nd Award of Excellence, H.M. Art Reflection 2024</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="art-piece collection-slide">
+                        <img src="resources/images/art/awards/Sunset.jpg" loading="lazy"
+                            alt="Sunset artwork awarded excellence, Horace Mann Art Reflection 2023">
+                        <figcaption><a
+                                href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQTbE_F9c5tDQYbkdPyjspvnAZ6OwThjlvXMF5ClUzMK6wM?width=3024&height=4032"
+                                target="_blank">Sunset - Award of Excellence, H.M. Art Reflection 2023</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="art-piece collection-slide">
+                        <img src="resources/images/art/awards/Blueberries.jpg" loading="lazy"
+                            alt="Blueberries painting, High Merit, Celebrating Art Summer 2025">
+                        <figcaption><a
+                                href="https://www.celebratingart.com/high-merit?id=354163&grade=3&contestname=Summer%202025&biggrade=K-3&wintp=filemaker"
+                                target="_blank">Blueberries - High Merit, Celebrating Art Summer 2025</a></figcaption>
+                    </figure>
+                    <figure class="art-piece collection-slide">
+                        <img src="resources/images/art/awards/DragonEye.jpg" loading="lazy"
+                            alt="Dragon Eye I See You artwork, High Merit, Celebrating Art Summer 2024">
+                        <figcaption><a href="resources/images/art/awards/DragonEye.jpg" target="_blank">Dragon Eye - I
+                                See You, High Merit, Celebrating Art Summer 2024</a></figcaption>
+                    </figure>
+                    <figure class="art-piece collection-slide">
+                        <img src="resources/images/art/awards/Peacock.jpeg" loading="lazy"
+                            alt="Peacock painting, High Merit, Celebrating Art Summer 2023">
+                        <figcaption><a
+                                href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQScFezeKhwWSIPIoWtS-iPDAY9D4WkH2uW9L4OjKxfcdv4?width=1024"
+                                target="_blank">Peacock - High Merit, Celebrating Art Summer 2023</a></figcaption>
+                    </figure>
+                    <figure class="art-piece collection-slide">
+                        <img src="resources/images/art/awards/Owl.jpg" loading="lazy"
+                            alt="Owl drawing, Invite to publish, Celebrating Art Fall 2022">
+                        <figcaption><a
+                                href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQT0DjVp5gk-T4SnvKkWqX5AAc98KnrlQ77IWUGWarQgbOM?width=2911&height=3576"
+                                target="_blank">Owl - Invite to Publish, Celebrating Art Fall 2022</a></figcaption>
+                    </figure>
+                </div>
+                <div class="collection-controls">
+                    <button class="collection-button collection-prev" type="button">Prev</button>
+                    <div class="collection-dots">
+                        <span class="collection-dot active" data-index="0"></span>
+                        <span class="collection-dot" data-index="1"></span>
+                        <span class="collection-dot" data-index="2"></span>
+                        <span class="collection-dot" data-index="3"></span>
+                        <span class="collection-dot" data-index="4"></span>
+                        <span class="collection-dot" data-index="5"></span>
+                        <span class="collection-dot" data-index="6"></span>
+                    </div>
+                    <button class="collection-button collection-next" type="button">Next</button>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 30px;">
+                <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1em; margin-bottom: 20px;">
+                    🎨 Want to see more artwork? Check out the complete collection!
+                </p>
+                <a href="full_gallery.html"
+                    style="color: white; text-decoration: none; background: rgba(255, 255, 255, 0.1); padding: 15px 30px; border-radius: 25px; transition: all 0.3s ease; display: inline-block;">
+                    🖼️ View Full Gallery
+                </a>
+            </div>
+
+            <div class="return-home">
+                <a href="index.html">🏠 Back to Home</a>
+            </div>
+
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var slider = document.querySelector('.collection-slider');
+                if (!slider) {
+                    return;
+                }
+
+                var slides = Array.prototype.slice.call(slider.querySelectorAll('.collection-slide'));
+                var dots = Array.prototype.slice.call(document.querySelectorAll('.collection-dot'));
+                var prevBtn = document.querySelector('.collection-prev');
+                var nextBtn = document.querySelector('.collection-next');
+                if (!slides.length || dots.length !== slides.length) {
+                    return;
+                }
+
+                var currentIndex = 0;
+                var timerId;
+
+                function showSlide(index) {
+                    slides[currentIndex].classList.remove('active');
+                    dots[currentIndex].classList.remove('active');
+                    currentIndex = index;
+                    slides[currentIndex].classList.add('active');
+                    dots[currentIndex].classList.add('active');
+                }
+
+                function nextSlide() {
+                    var nextIndex = (currentIndex + 1) % slides.length;
+                    showSlide(nextIndex);
+                }
+
+                function prevSlide() {
+                    var prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+                    showSlide(prevIndex);
+                }
+
+                function resetTimer() {
+                    if (timerId) {
+                        clearInterval(timerId);
+                    }
+                    if (slides.length > 1) {
+                        timerId = setInterval(nextSlide, 7000);
+                    }
+                }
+
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', function () {
+                        nextSlide();
+                        resetTimer();
+                    });
+                }
+
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', function () {
+                        prevSlide();
+                        resetTimer();
+                    });
+                }
+
+                dots.forEach(function (dot) {
+                    dot.addEventListener('click', function (event) {
+                        var index = parseInt(event.currentTarget.getAttribute('data-index'), 10);
+                        if (!isNaN(index) && index !== currentIndex) {
+                            showSlide(index);
+                            resetTimer();
+                        }
+                    });
+                });
+
+                resetTimer();
+            });
+        </script>
     </body>
 
 </html>
