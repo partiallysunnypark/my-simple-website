@@ -231,7 +231,7 @@
                 grid-template-columns: 1fr;
                 gap: 25px;
                 margin-top: 40px;
-                max-width: 800px;
+                max-width: 900px;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -337,6 +337,28 @@
                 box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
             }
 
+            .school-preview {
+                display: flex;
+                gap: 8px;
+                margin: 15px 0;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .school-preview img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 8px;
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                transition: all 0.3s ease;
+            }
+
+            .school-preview img:hover {
+                transform: scale(1.08);
+                border-color: rgba(255, 255, 255, 0.6);
+            }
+
             .profile-section {
                 text-align: center;
                 margin-bottom: 30px;
@@ -399,6 +421,16 @@
                     flex-direction: column;
                     align-items: center;
                 }
+
+                .features-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            @media (min-width: 769px) {
+                .features-grid {
+                    grid-template-columns: repeat(2, minmax(260px, 1fr));
+                }
             }
         </style>
     </head>
@@ -423,6 +455,7 @@
                 <li><a href="art.html">🎨 Art Gallery</a></li>
                 <li><a href="books.html">📚 Books</a></li>
                 <li><a href="soccer.html">⚽ Soccer</a></li>
+                <li><a href="school_activities.html">🎓 School Activities</a></li>
             </ul>
         </nav>
 
@@ -447,6 +480,8 @@
                                 alt="Andersen Bird - Silver Award 2024" loading="lazy">
                             <img src="resources/images/art/awards/In the mirror.jpg"
                                 alt="In the Mirror - 2nd Award of Excellence 2024" loading="lazy">
+                            <img src="resources/images/art/nov2025/IBelong.jpg" alt="I Belong - Gallery Highlight 2025"
+                                loading="lazy">
                             <img src="resources/images/art/awards/DragonEye.jpg" alt="Dragon Eye - High Merit 2024"
                                 loading="lazy">
                         </div>
@@ -458,7 +493,7 @@
                         <span class="feature-icon">📖</span>
                         <h3>Published Author</h3>
                         <div class="book-preview">
-                            <img src="https://m.media-amazon.com/images/I/71VIyOkPeYL._SY342_.jpg"
+                            <img src="resources/images/books/land_beyond_pages.jpg"
                                 alt="The Land Beyond the Pages book cover" loading="lazy">
                         </div>
                         <p>Read about my published book "The Land Beyond the Pages" - written and illustrated at age 8,
@@ -478,6 +513,19 @@
                         </div>
                         <p>Follow my soccer journey with multiple championship victories including Labor Day Cup, PAC
                             Championships, and WPL titles.</p>
+                    </div>
+
+                    <div class="feature-card" onclick="window.location.href='school_activities.html'">
+                        <span class="feature-icon">🎓</span>
+                        <h3>School Activities</h3>
+                        <div class="school-preview">
+                            <img src="resources/images/schoolactivities/SafetyPatrol.jpg"
+                                alt="Sandra helping classmates as a safety patrol leader" loading="lazy">
+                            <img src="resources/images/schoolactivities/choir.jpg" alt="Sandra performing with the school choir"
+                                loading="lazy">
+                        </div>
+                        <p>See how I support our school community as a safety patrol member, choir singer, and spirit
+                            team publicist.</p>
                     </div>
                 </div>
 

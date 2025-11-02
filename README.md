@@ -41,14 +41,15 @@ A modern, vivid portfolio website showcasing Sandra Chen's artwork, achievements
 ## File Structure
 
 ```
-├── index.html          # Homepage with modern design
-├── art.html           # Art gallery with awards
-├── books.html         # Published books showcase
-├── chinese_zodiac.html # Traditional zodiac artwork
-├── soccer.html        # Empty sports page
-├── images/            # Optimized artwork images
-├── artRewards/        # Award documents
-└── optimize-images.ps1 # Image optimization script
+├── index.html             # Homepage with modern design
+├── art.html              # Art gallery with awards
+├── books.html            # Published books showcase
+├── full_gallery.html     # Extended art collection
+├── school_activities.html # School activities highlight
+├── soccer.html           # Sports section scaffold
+├── resources/            # Local image assets
+└── tools/
+    └── optimize_new_art.ps1 # Artwork optimization helper
 ```
 
 ## Setup
