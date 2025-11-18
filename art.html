@@ -242,6 +242,7 @@
             .collection-slider-wrapper {
                 max-width: 720px;
                 margin: 0 auto 40px auto;
+                position: relative;
             }
 
             .collection-slider {
@@ -271,17 +272,39 @@
                 background: rgba(255, 255, 255, 0.2);
                 border: 1px solid rgba(255, 255, 255, 0.3);
                 color: white;
-                padding: 8px 18px;
-                border-radius: 20px;
+                padding: 10px 20px;
+                border-radius: 50%;
                 cursor: pointer;
                 transition: all 0.3s ease;
                 font-weight: 500;
+                font-size: 1.2em;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 10;
             }
 
             .collection-button:hover {
-                background: rgba(255, 255, 255, 0.3);
-                transform: translateY(-2px);
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                background: rgba(255, 255, 255, 0.4);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            }
+
+            .collection-prev {
+                left: -60px;
+            }
+
+            .collection-next {
+                right: -60px;
+            }
+
+            @media (max-width: 900px) {
+                .collection-prev {
+                    left: 5px;
+                }
+
+                .collection-next {
+                    right: 5px;
+                }
             }
 
             .collection-dots {
@@ -356,6 +379,10 @@
         <div class="container">
             <div class="award-summary">
                 <h2>🏆 Award Highlights</h2>
+                <p><strong>Highest Reflections score &amp; LWPTSA District finalist</strong>, Horace Mann Art
+                    Reflection - <a
+                        href="https://1drv.ms/u/c/c5f2fcbc5386bf57/EYtTt3HznVVLtoBHaowPG0sBvtKdXAV3c0c8-apRKe7gVA?e=RgshUt"
+                        target="_blank">2025 (I Belong to Where Dreams Meet)</a>.</p>
                 <p><strong>Silver award</strong> in junior painting category, <a
                         href="https://1drv.ms/i/c/c5f2fcbc5386bf57/IQSVTkcxoyCOQYzQSI5SDa0IAZW4PM1VvcspJ6xESK6TdTM?width=2417&height=1872"
                         target="_blank">H.C. Andersen Art Awards 2024 (Bird)</a>.</p>
@@ -382,6 +409,14 @@
             <div class="collection-slider-wrapper">
                 <div class="collection-slider">
                     <figure class="art-piece collection-slide active">
+                        <img src="resources/images/art/nov2025/IBelong.jpg" loading="lazy"
+                            alt="I Belong artwork receiving top marks and advancing to the LWPTSA District round">
+                        <figcaption><a
+                                href="https://1drv.ms/u/c/c5f2fcbc5386bf57/EYtTt3HznVVLtoBHaowPG0sBfXx13WBEJynyiC7E1my9kQ?e=W9g6MY"
+                                target="_blank">I Belong to Where Dreams Meet – Highest Reflections score &amp;
+                                LWPTSA District finalist</a></figcaption>
+                    </figure>
+                    <figure class="art-piece collection-slide">
                         <img src="resources/images/art/awards/AndersenBird.jpg" loading="lazy"
                             alt="Bird painting awarded silver in junior painting, H.C. Andersen Art Awards 2024">
                         <figcaption><a
@@ -433,8 +468,9 @@
                                 target="_blank">Owl - Invite to Publish, Celebrating Art Fall 2022</a></figcaption>
                     </figure>
                 </div>
+                <button class="collection-button collection-prev" type="button">‹</button>
+                <button class="collection-button collection-next" type="button">›</button>
                 <div class="collection-controls">
-                    <button class="collection-button collection-prev" type="button">Prev</button>
                     <div class="collection-dots">
                         <span class="collection-dot active" data-index="0"></span>
                         <span class="collection-dot" data-index="1"></span>
@@ -443,8 +479,8 @@
                         <span class="collection-dot" data-index="4"></span>
                         <span class="collection-dot" data-index="5"></span>
                         <span class="collection-dot" data-index="6"></span>
+                        <span class="collection-dot" data-index="7"></span>
                     </div>
-                    <button class="collection-button collection-next" type="button">Next</button>
                 </div>
             </div>
 
@@ -482,11 +518,13 @@
                 var timerId;
 
                 function showSlide(index) {
+                    var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
                     slides[currentIndex].classList.remove('active');
                     dots[currentIndex].classList.remove('active');
                     currentIndex = index;
                     slides[currentIndex].classList.add('active');
                     dots[currentIndex].classList.add('active');
+                    window.scrollTo(0, currentScroll);
                 }
 
                 function nextSlide() {
